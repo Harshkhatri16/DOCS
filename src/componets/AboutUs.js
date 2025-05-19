@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './AboutUs.css';
 import { motion, useAnimation } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,7 +9,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
 const AboutUs = () => {
-    const [images] = useState([
+    const [facultyData, setFacultyData] = useState([]);
+    const [images, setImages] = useState([
         'https://via.placeholder.com/600x400',
         'https://via.placeholder.com/600x400',
         'https://via.placeholder.com/600x400'
