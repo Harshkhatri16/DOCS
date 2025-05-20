@@ -8,20 +8,14 @@ import Syllabus from './componets/Syllabus';
 
 function App() {
   return (
-    <>
-    <Router>
-        <Navbar/>
+    <Router basename="/csweb"> {/* Replace with your actual repo name */}
+      <Navbar />
       <Routes>
-          <Route path='/' Component={Home}></Route>
-          <Route path='/Courses'Component={Courses}></Route>
-           <Route path='/syllabus'Component={Syllabus}></Route>
-
-          {/* <Route path='/Products' Component={Products}></Route>
-          <Route path='/Cart' Component={Cart}></Route> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/Courses" element={<Courses />} />
+        <Route path="/syllabus" element={<Syllabus />} />
       </Routes>
-         
     </Router>
-  </>
   );
 }
 
