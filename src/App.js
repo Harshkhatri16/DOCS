@@ -8,7 +8,7 @@ import Syllabus from './componets/Syllabus';
 
 function App() {
   return (
-    <Router basename="/csweb"> {/* Replace with your actual repo name */}
+    <Router> {/* Replace with your actual repo name */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
