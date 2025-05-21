@@ -8,7 +8,7 @@ import Syllabus from './componets/Syllabus';
 
 function App() {
   return (
-    <Router> {/* Replace with your actual repo name */}
+    <Router> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

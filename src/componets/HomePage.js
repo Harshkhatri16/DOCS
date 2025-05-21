@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import logo2 from '../images/logo2.png';
+import home from '../images/home.png';
 import './Home.css';
 import AboutUs from './AboutUs';
 import Academics from './Academics';
@@ -72,7 +73,7 @@ export default function HomePage() {
                 >
                     <motion.img
                         id="img2"
-                        src="./home.png"
+                        src={home}
                         alt="Home"
                         className="img-fluid"
                         whileHover={{ scale: 1.05 }}
