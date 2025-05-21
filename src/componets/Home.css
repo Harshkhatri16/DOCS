@@ -1,3 +1,4 @@
+/* Mobile-friendly image */
 #img {
     height: auto;
     width: 100%;
@@ -5,16 +6,7 @@
     margin: 0 auto;
 }
 
-h1,
-h2,
-h5 {
-    margin: 0.5rem 0;
-}
-
-button {
-    margin: 0 auto;
-}
-
+/* Back to Top Button */
 .back-to-top-btn {
     bottom: 20px;
     right: 20px;
@@ -36,21 +28,36 @@ button {
     color: #fff;
 }
 
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-    #img2 {
-        max-height: 300px;
-        width: 100%;
+/* Responsive Text */
+h1, h2, h5 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Button consistency */
+.btn {
+    min-width: 120px;
+    font-size: 1rem;
+}
+
+/* Media Queries for small phones (320px-480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
     }
 
-    h1,
-    h2,
-    h5 {
-        text-align: center;
+    h2 {
+        font-size: 1.2rem;
     }
 
     .btn {
         width: 100%;
-        max-width: 200px;
+        max-width: 250px;
+    }
+
+    .back-to-top-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
     }
 }
