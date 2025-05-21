@@ -8,7 +8,7 @@ import Syllabus from './componets/Syllabus';
 
 function App() {
   return (
-    <Router> 
+    <Router basename="/DOCS"> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
